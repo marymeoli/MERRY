@@ -92,9 +92,13 @@ h1 {
   color:yellowgreen;
 }
 .About p5> img{
-  width: 3cm;
+  width: 3cm ;
   height:3cm ;
+  border-radius: 30%;
 }
 .About img{
   width: 100%;
+}
+.About h1 {
+  color: whitesmoke;
 }
