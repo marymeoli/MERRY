@@ -121,8 +121,8 @@ function orderPrice() {
 // Function to calculate the total price
 function totalOrderPrice() {
   deliveryPrice();
-
-  priceTotal = cumulativePrice + priceDelivery; //Calculate order cost plus delivery
+// order cost + delivery
+  priceTotal = cumulativePrice + priceDelivery; 
   let finalOrder = " ";
   userData.forEach(orderDetails);
   function orderDetails(value, index, array){
