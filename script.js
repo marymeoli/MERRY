@@ -116,7 +116,8 @@ function orderPrice() {
       alert("Your order is ready for pick up from our location");
     }
   }
-}
+  }
+
 
 // Function to calculate the total price
 function totalOrderPrice() {
