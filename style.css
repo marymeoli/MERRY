@@ -32,7 +32,7 @@ h1 {
       rgba(0, 0, 0, 0.8)
     ),
     url(images.jpeg);
-  height: 165%;
+  height: 185%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -101,4 +101,8 @@ h1 {
 }
 .About h1 {
   color: whitesmoke;
+}
+.contact {
+  background-color: grey;
+  width: 100%;
 }
