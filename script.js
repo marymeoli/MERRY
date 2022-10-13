@@ -140,3 +140,6 @@ function totalOrderPrice() {
   history.go();
   alert("Your order will be delivered at your location");
 }
+const alertFunction = () => {
+  window.alert("App is in development... or is it?");
+}
