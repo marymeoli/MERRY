@@ -76,21 +76,21 @@ function deliveryPrice() {
 function orderPrice() {
   pizzaPrice();
   pastaPrice();
-  Price();
+  priceStarters();
   orderCost = priceSize + priceCrust + priceToppings;
   userForm = {
-    size: document.getElementById("size").value,
-    crust: document.getElementById("crust").value,
-    toppings: document.getElementById("toppings").value
+    size: document.getElementById("pizza").value,
+    crust: document.getElementById("pasta").value,
+    toppings: document.getElementById("starters").value
   };
   userData = Object.values(userForm);
   alert(
     "You have picked a " +
-      userForm.size +
+      userForm.pizza +
       " " +
-      userForm.crust +
+      userForm.pasta +
       " " +
-      userForm.toppings +
+      userForm.starters +
       " pizza. The total charge for your Pizza is " +
       orderCost
   );
