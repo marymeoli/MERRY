@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+      </style>
+      <link rel="stylesheet" href="./style.css">
+    <title>PIZZA</title>
+  </head>
+  <body>
+    <header class="text-center">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="row">
+        <div class="col-md-3">
+          <img src="CRU5100_CrustSupreme_600x600_tiny.png" alt="" />
+        </div>
+        <div class="col-md-8 d-flex p-4">
+          <h1>PIZZA RESTARANT</h1>
+        </div>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="bg">
+        <h3 class="text-justify">
+        <span>Thin </span>
+        <span>Crust pizza</span>
+      </h3>
+      <p1>
+        <span>I take pride in making a perfect pizza.</span>
+        <span>offer pizza  and helpful service.</span>
+        <span> Every customer have oppotunity.</span> 
+        <span>Available in time</span>
+      </p1>
+      <a class="nav-link" href="#">
+                <button type="button" class="btn btn-warning" data-toggle="modal"
+        data-target="#myModal">Order</button>        
+            </a>
+            <p2>
+              <span>Open from 10am to 12pm</span>
+            </p2>
+      </div>
+      
+
+    </section>
+
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Form in the pop-up -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title">totalOrderPrice</h1>
+          </div>
+          <div class="modal-body">
+            <!-- This is the form that alllows the user to specify their preffered Pizza -->
+            <div id="form-s">
+              <form action="javascript:totalorderprice()"  name="form" id="form">
+              <label for="pizza"> preffered Pizza</label>
+               <select class="form-control" name="pizza" id="pizza" value="pizza" required>
+                <option value="" selected>-- choice pizza--</option>
+                <option value="Margherita">Margherita.500</option>
+                <option value="Formaggio">Formaggio.400</option>
+                <option value="meat town">meat town.200</option></select>
+
+              <label for="pasta"> preffered Pasta</label>
+              <select class="form-control" name="pasta" id="pasta" value="pasta" required>
+                <option value="" selected>-- choice pasta--</option> 
+                <option value="Lasagna">Lasagna.300</option>
+                <option value="Ravioli">Ravioli.200</option>
+                <option value="Spaghetti Classica">Spaghetti Classica. 150</option>
+              </select>
+
+              <label for="Starters"> preffered Starters</label>
+              <select class="form-control" name="Starters" id="Starters" value="Starters" required>
+                <option value="" selected>-- choice Starters--</option>
+                <option value="Today's Soup">Today's Soup. 50 </option>
+                <option value="Bruschetta">Bruschetta. 100</option>
+                <option value="Garlic bread">Garlic bread. 50</option>
+              </select>
+              <br />
+              <input
+                class="btn-success"
+                type="submit"
+                id="submit"
+                value="Add to Order"
+                onsubmit= reset()
+              />
+            </form>
+            <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-dismiss="modal"
+            >
+
+            Cancel Order
+          </button>
+        </div>
+          </div>
+        <div id="form1-h">
+          <form name="form1" id="form1">
+            <label for="pizza">Delivery location?</label>
+             <select class="form-control" name="dprice" id="dprice" value="dprice" required>
+              <option value="" selected>-- choice Destination --</option>
+              <option value="Namanga">Within Namanga @ Kshs. 0</option>
+              <option value="Ngatataek">Ngatataek @ Kshs. 100</option>
+              <option value="patimaro">patimaro @Kshs. 200</option>
+              <option value="bissil">bissil @ Kshs. 200</option>
+              <option value="meto">meto @ Kshs. 100</option>
+              <option value="kajiado town">Kajiado town @ Kshs. 300</option>
+            </select>
+              <br>                  
+          </form>
+
+          <div class="modal-footer">
+            <button
+            id="place-order"
+            type="button"
+            class="btn btn-success"
+            data-dismiss="modal"
+            onclick="totalOrderPrice()"
+          >
+            Check Out
+          </button>
+          
+          <button
+            type="button"
+            class="btn btn-danger"
+            data-dismiss="modal"
+          >
+            Cancel Order
+          </button>
+        </div>
+        </div>
+          <div class="modal-footer">
+            
+          </div>
+        </div>
+        </div>            
+      </div>
+    </div>
+  </div>
+</header>
+<footer>
+
+</footer>
+
+</body>
+</html>
+            
+            
+
+
+
+
+   

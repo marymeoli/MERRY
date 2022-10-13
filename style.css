@@ -1,0 +1,72 @@
+/* This will style the entire body */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* This will add font type for all Header ones */
+h1 {
+  font-family: "Neonderthaw", cursive;
+}
+/* This will style the header section */
+.navbar {
+  color: #fbff00;
+}
+.col-md-3 img {
+  width: 8em;
+}
+/* This will style the forms */
+#form1-h,
+#form2-h {
+  display: none;
+}
+.home {
+  height: 100vh;
+}
+.bg {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(CRU5100_CrustSupreme_600x600_tiny.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fbff00;
+}
+
+.bg h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lobster", cursive;
+  padding: 2em;
+  font-size: 4vw;
+}
+.bg p1 {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4em;
+  font-size: 1.5vw;
+}
+.bg a{
+    padding-left: 10em;
+    font-size: 2vw;
+    margin-top: auto;
+}
+.bg p2 {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-right: 50em;
+  font-size: 1.5vw;
+  background-color: black;
+  
+}
