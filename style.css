@@ -32,7 +32,7 @@ h1 {
       rgba(0, 0, 0, 0.8)
     ),
     url(images.jpeg);
-  height: 110%;
+  height: 130%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -47,6 +47,10 @@ h1 {
   padding: 2em;
   font-size: 5vw;
   color:yellow;
+}
+.bg h3 >img{
+  width: 7cm;
+  height: 5cm;
 }
 .bg p1 {
   color: white;
