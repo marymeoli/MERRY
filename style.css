@@ -31,7 +31,7 @@ h1 {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url(images.jpeg);
+    url(CRU5100_CrustSupreme_600x600_tiny.png);
   height: 185%;
   background-repeat: no-repeat;
   background-position: center;
@@ -106,4 +106,14 @@ h1 {
   background-color: grey;
   width: 100%;
   color: whitesmoke;
+}
+.mob-1{
+  width: 3cm ;
+  height:3cm ;
+  border-radius: 30%;
+
+}
+.changing{
+  color: red;
+  
 }
