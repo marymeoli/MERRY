@@ -32,7 +32,7 @@ h1 {
       rgba(0, 0, 0, 0.8)
     ),
     url(images.jpeg);
-  height: 130%;
+  height: 180%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -57,8 +57,12 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 1em;
-  font-size: 1.5vw;
+  padding-top: 2em;
+  font-size: 2vw;
+}
+.bg p1> img{
+  width: 4cm;
+  height: 4cm;
 }
 .bg a{
     padding-left: 1em;
