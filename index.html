@@ -31,13 +31,15 @@
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"
   ></script>
+  
   <!-- the Js File -->
   <script defer src="script.js"></script>
+  
       <!--css file-->
       <link rel="stylesheet" href="./style.css">
     <title>PIZZA</title>
   </head>
-  <body>
+  <body onload = "loadMap()" >
     <header class="text-center">
          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="row">
@@ -149,6 +151,7 @@
             </p>
 
             </div>
+            
 
           </div>
           <div class="mobile">
@@ -162,6 +165,8 @@
                 app.
               </d>
               <div class="stores">
+          
+
                 <img
                   class="store-image"
                   onClick="alertFunction()"
@@ -273,7 +278,8 @@
 <footer>
 
 </footer>
-  
+
+  <script src="./script.js"></script>
 </body>
 </html>
             

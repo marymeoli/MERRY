@@ -144,3 +144,25 @@ function totalOrderPrice() {
 const alertFunction = () => {
   window.alert("App is in development... or is it?");
 }
+
+        // fake JSON call
+        function getJSONMarkers() {
+          const markers = [
+            {
+              name:  "Rixos The Palm",
+              location: [25.1212, 55.1535]
+            },
+            {
+              name: "Shangri-La Hotel",
+              location: [25.2084, 55.2719]
+            },
+            {
+              name: "Grand Hyatt",
+              location: [25.2285, 55.3273]
+            }
+          ];
+          return markers;
+        }
+        
+
+         src="https://cdn.tailwindcss.com"
